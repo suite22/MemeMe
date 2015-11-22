@@ -28,9 +28,12 @@ class MemeMeUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
+    func testPickPhoto() {
+		XCUIApplication().toolbars.buttons["Pick Image"].tap()
+		// TODO: This should launch the system photo picker.
+		
+		// Select the first photo
+		
+		// Is the photo visible in the view?
+	}
 }
