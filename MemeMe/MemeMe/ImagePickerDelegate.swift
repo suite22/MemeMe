@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ImagePickerDelegate: NSObject, UIImagePickerControllerDelegate {
+class ImagePickerDelegate: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 	
 	func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
 		// TODO: Handle a user's input
@@ -17,5 +17,6 @@ class ImagePickerDelegate: NSObject, UIImagePickerControllerDelegate {
 	
 	func imagePickerControllerDidCancel(picker: UIImagePickerController) {
 		// TODO: Handle when a user cancels input.
+		picker.dismissViewControllerAnimated(true, completion: nil)
 	}
 }

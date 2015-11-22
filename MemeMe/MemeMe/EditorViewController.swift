@@ -20,6 +20,10 @@ class EditorViewController: UIViewController {
 		// Dispose of any resources that can be recreated.
 	}
 
-
+	@IBAction func pickImageButton(sender: AnyObject) {
+		let imagePicker = UIImagePickerController()
+		imagePicker.delegate = ImagePickerDelegate()
+		self.presentViewController(imagePicker, animated: true, completion: nil)
+	}
 }
 

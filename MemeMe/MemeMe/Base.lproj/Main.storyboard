@@ -22,7 +22,7 @@
                                 <items>
                                     <barButtonItem title="Pick Image" id="yVx-Zu-FJV">
                                         <connections>
-                                            <action selector="pickImageButton:" destination="BYZ-38-t0r" id="o2v-zU-gAQ"/>
+                                            <action selector="pickImageButton:" destination="BYZ-38-t0r" id="Unz-cx-KJx"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
