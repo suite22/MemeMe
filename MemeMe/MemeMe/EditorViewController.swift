@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EditorViewController: UIViewController {
+class EditorViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 	
 	@IBOutlet weak var mainMemeImageView: UIImageView!
 	
@@ -24,8 +24,20 @@ class EditorViewController: UIViewController {
 
 	@IBAction func pickImageButton(sender: AnyObject) {
 		let imagePicker = UIImagePickerController()
-		imagePicker.delegate = ImagePickerDelegate()
+		imagePicker.delegate = self
 		self.presentViewController(imagePicker, animated: true, completion: nil)
+	}
+	
+	func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+		if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
+			self.mainMemeImageView.image = image
+		}
+		picker.dismissViewControllerAnimated(true, completion: nil)
+	}
+
+	func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+		// TODO: Handle when a user cancels input.
+		picker.dismissViewControllerAnimated(true, completion: nil)
 	}
 }
 
