@@ -15,6 +15,7 @@
 		9B4D663A1C0243200092933F /* MemeMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4D66391C0243200092933F /* MemeMeTests.swift */; };
 		9B4D66451C0243200092933F /* MemeMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4D66441C0243200092933F /* MemeMeUITests.swift */; };
 		9B4D66531C0245BB0092933F /* ImagePickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4D66521C0245BB0092933F /* ImagePickerDelegate.swift */; };
+		9B4D66551C0279F10092933F /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4D66541C0279F10092933F /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9B4D66441C0243200092933F /* MemeMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeMeUITests.swift; sourceTree = "<group>"; };
 		9B4D66461C0243200092933F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B4D66521C0245BB0092933F /* ImagePickerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerDelegate.swift; sourceTree = "<group>"; };
+		9B4D66541C0279F10092933F /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				9B4D66241C0243200092933F /* AppDelegate.swift */,
 				9B4D66261C0243200092933F /* EditorViewController.swift */,
+				9B4D66541C0279F10092933F /* DataModel.swift */,
 				9B4D66521C0245BB0092933F /* ImagePickerDelegate.swift */,
 				9B4D66281C0243200092933F /* Main.storyboard */,
 				9B4D662B1C0243200092933F /* Assets.xcassets */,
@@ -262,6 +265,7 @@
 				9B4D66531C0245BB0092933F /* ImagePickerDelegate.swift in Sources */,
 				9B4D66271C0243200092933F /* EditorViewController.swift in Sources */,
 				9B4D66251C0243200092933F /* AppDelegate.swift in Sources */,
+				9B4D66551C0279F10092933F /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
