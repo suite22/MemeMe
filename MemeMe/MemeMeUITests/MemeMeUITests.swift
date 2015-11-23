@@ -28,12 +28,17 @@ class MemeMeUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testPickPhoto() {
-		XCUIApplication().toolbars.buttons["Pick Image"].tap()
-		// TODO: This should launch the system photo picker.
+    func testPickingPhotoChangesImage() {
+		let app = XCUIApplication()
 		
-		// Select the first photo
+		app.toolbars.buttons["Pick Image"].tap()
 		
-		// Is the photo visible in the view?
+		app.tables.buttons["Camera Roll"].tap()
+		
+		app.collectionViews.childrenMatchingType(.Cell).elementBoundByIndex(0).tap()
+		
+		let firstPhoto = app.childrenMatchingType(.Window).elementBoundByIndex(0).childrenMatchingType(.Other).element.childrenMatchingType(.Image).element.exists
+
+		XCTAssertTrue(firstPhoto, "The background image should be set.")
 	}
 }
